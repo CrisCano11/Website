@@ -72,6 +72,7 @@ section {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 /* Header Section */
 
 header {
@@ -159,6 +160,13 @@ header .navbar ul li a:hover {
     font-size: 2rem;
     color: #222;
     padding: 1rem 0;
+}
+
+.logo img{
+display: flex;
+margin-left: -3em;
+width: 25%;
+height: 25%;
 }
 
 /* Home Section Ends */
@@ -371,6 +379,12 @@ header .navbar ul li a:hover {
      .home {
          padding: 1rem 4rem;
      }
+     .logo img{
+        display: left;
+        margin-left: -3em;
+        width: 25%;
+        height: 25%;
+        }
  }
  @media (max-width:991px) {
      header {
@@ -385,11 +399,23 @@ header .navbar ul li a:hover {
      body {
          padding: 0;
      }
+     .logo img{
+        display: left;
+        margin-left: -3em;
+        width: 25%;
+        height: 25%;
+        }
  }
  @media (max-width:768px) {
      html {
          font-size: 50%;
      }
+     .logo img{
+        display: left;
+        margin-left: -3em;
+        width: 25%;
+        height: 25%;
+        }
  }
 @media (max-width:400px) {
     header {
@@ -410,6 +436,12 @@ header .navbar ul li a:hover {
     .contact .row form {
         margin: 3rem 0;
     }
+    .logo img{
+        display: left;
+        margin-left: -3em;
+        width: 25%;
+        height: 25%;
+        }
 }
 
 .dark-mode :root {
