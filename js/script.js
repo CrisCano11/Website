@@ -37,15 +37,16 @@
 
 $("#send").on("click", function name() {
    var data = $("#form").serialize();
-  console.log(data);
-
    $.ajax({
     url: "js/send.php",
     type: "POST",
     data: data,
     success: function () {
     alert("Information send succesfuly");
-     
+     $("#nombre").val("");
+     $("#project").val("");
+     $("#email").val("");
+     $("#description").val("");
     },
     error: function (error) {
       alert("Error");
