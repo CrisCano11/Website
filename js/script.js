@@ -40,7 +40,7 @@ $("#send").on("click", function name() {
 
   let name = document.getElementById("nombre").value;
   if (name.length === 0){
-    alertify.error("the field can't be empty");
+    alertify.error("the field name can't be empty");
     $("#nombre").addClass("is-invalid");
     return;
   }else{
@@ -49,7 +49,7 @@ $("#send").on("click", function name() {
 
   let email = document.getElementById("email").value;
   if (email.length === 0){
-    alertify.error("the field can't be empty");
+    alertify.error("the field email can't be empty");
     $("#email").addClass("is-invalid");
     return;
   }else{
@@ -58,7 +58,7 @@ $("#send").on("click", function name() {
 
   let project = document.getElementById("project").value;
   if (project.length === 0){
-    alertify.error("the field can't be empty");
+    alertify.error("the field project can't be empty");
     $("#project").addClass("is-invalid");
     return;
   }else{

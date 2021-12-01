@@ -872,9 +872,11 @@
 }
 .alertify-notifier .ajs-message.ajs-error {
   background: rgba(217, 92, 92, 0.95);
+  font-size: 2rem;
 }
 .alertify-notifier .ajs-message.ajs-warning {
   background: rgba(255, 230, 0, 0.95);
+  font-size: 2rem;
 }
 .alertify-notifier .ajs-message .ajs-close {
   position: absolute;
