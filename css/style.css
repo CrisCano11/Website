@@ -202,7 +202,7 @@ height: 25%;
     flex-wrap: wrap;
 }
 .about .row .counter .box {
-    width: 20rem;
+    width: 22rem;
     background: #222;
     text-align: center;
     padding: 2rem;
@@ -281,19 +281,33 @@ height: 25%;
 .portfolio .box-container .box {
     height: 23rem;
     width: 26rem;
-    border-radius: 1rem;
     margin: 2rem;
-    overflow: hidden;
+   /* overflow: hidden;*/
     cursor: pointer;
 }
 .portfolio .box-container .box img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    border-radius: 1rem;
+    /*object-fit: cover;*/
 }
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
 }
+
+.portfolio .box-container .box i{
+    height: 3rem;
+    display: inline-block;
+   }
+
+.portfolio .box-container .box span{
+    height: 3rem;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 
 .subheading {
     text-align: center;
@@ -381,7 +395,20 @@ height: 25%;
 /* Contact Section Ends */
 
 /* Media Queries */
-
+@media (max-width:1300px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        padding: 1rem 4rem;
+    }
+    .logo img{
+       display: left;
+       margin-left: -3em;
+       width: 20%;
+       height: 25%;
+       }
+}
  @media (max-width:1200px) {
      html {
          font-size: 55%;
@@ -391,8 +418,8 @@ height: 25%;
      }
      .logo img{
         display: left;
-        margin-left: -3em;
-        width: 25%;
+        margin-left: -1em;
+        width: 20%;
         height: 25%;
         }
  }
@@ -411,7 +438,7 @@ height: 25%;
      }
      .logo img{
         display: left;
-        margin-left: -3em;
+        margin-left: -1em;
         width: 25%;
         height: 25%;
         }
@@ -427,7 +454,7 @@ height: 25%;
         height: 25%;
         }
  }
-@media (max-width:400px) {
+@media (max-width:420px) {
     header {
         width: 100vw;
     }
@@ -448,8 +475,8 @@ height: 25%;
     }
     .logo img{
         display: left;
-        margin-left: -3em;
-        width: 25%;
+        margin-left: -1em;
+        width: 35%;
         height: 25%;
         }
 }
