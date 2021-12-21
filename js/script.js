@@ -32,7 +32,10 @@ $(document).ready(function () {
 
   $("#abou").click(function () {
     $("#about").focus();
+    $("#menu").toggleClass("fa-times");
+    $("header").removeClass("toggle");
   });
+
 });
 
 $("#send").on("click", function name() {
