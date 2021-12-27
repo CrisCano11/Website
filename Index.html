@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/alertifyjs/css/alertify.rtl.css" />
     <link rel="stylesheet" href="js/alertifyjs/css/themes/default.rtl.css" />
+
     <link rel="icon" href="images/icon.ico" />
   </head>
   <body class="">
@@ -304,6 +305,7 @@
           </div>
         </div>
       </section>
+
       <section class="doors-motors" id="doors-motors">
         <h2 class="subheading"><span>Doors Motors and Home alarms</span></h2>
         <div class="box-container">
@@ -349,6 +351,16 @@
             </i>
           </div>
         </div>
+
+        <button
+          type="button"
+          class="btn"
+          data-toggle="modal"
+          data-target="#modal-lg"
+          id="modal-doors"
+        >
+          View more
+        </button>
       </section>
 
       <section class="development" id="development">
@@ -437,4 +449,68 @@
     <script src="js/alertifyjs/alertify.js"></script>
     <script src="js/script.js"></script>
   </body>
+
+  <div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+            <h4 class="modal-title">Doors Motors and Home alarms</h4>
+        
+          
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="slider">
+
+            <div class="slide">
+              <img src="images/Moto1.jpg" alt="" />
+            </div>
+
+            <div class="slider">
+              <div class="slide">
+                <img src="images/Puerta1.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slide">
+                <img src="images/Puerta2.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slide">
+                <img src="images/Alarma1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slide">
+                <img src="images/Alarma2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slide">
+                <img src="images/Alarma3.jpg" alt="" />
+              </div>
+            </div>
+            <button class="btn-slide prev">
+              <i class="fas fa-ex fa-chevron-circle-left"></i>
+            </button>
+            <button class="btn-slide next">
+              <i class="fas fa-ex fa-chevron-circle-right"></i>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
