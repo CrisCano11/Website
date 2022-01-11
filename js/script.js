@@ -1,6 +1,37 @@
 alertify.set("notifier", "position", "top-right");
 
 $(document).ready(function () {
+
+  console.log(document.querySelectorAll('.slide')); 
+  const carousel = document.querySelectorAll('.slide');
+  
+  const changeslide = function (sliders) {
+    carousel.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
+   
+    console.log("traslate");
+  };
+
+    var current = 0;
+    changeslide(current);
+    $("#next").on('click', function () {
+      current++;
+      if (carousel.length -1 < current) {
+        current = 0
+      }
+      console.log(current);
+      console.log(changeslide(current))
+      console.log("next");
+    });
+  
+    $("#prev").on('click',function () {
+      current--;
+      if (0>=current) {
+        current = 0
+      }
+      changeslide(current);
+      console.log("prev");
+    })
+
   $("#menu").click(function () {
     $(this).toggleClass("fa-times");
     $("header").toggleClass("toggle");
@@ -83,32 +114,9 @@ $("#send").on("click", function name() {
       alertify.error("There was an error try again");
     },
   });
-  slider();
+
+  
+  
+
 });
 
-function slider() {
-  const carousel = document.querySelectorAll('.slide');
-  const btnPrev = document.querySelector('.prev');
-  const btnNext = document.querySelector('.next');
-  let current = 0;
-
-  const changeslide = function (sliders) {
-    carousel.forEach((slide,index)=> (slide.getElementsByClassName.transform = `translateX(${100*(index-slide)}%)`));
-  };
-  changeslide(current);
-  btnNext.addEventListener('click', function () {
-    current++;
-    if (carousel.length -1 < current) {
-      current = 0
-    }
-    changeslide(current);
-  });
-
-  btnPrev.addEventListener('click',function () {
-    current--;
-    if (0>=currrent) {
-      current = 0
-    }
-    changeslide(current);
-  })
-}

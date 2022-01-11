@@ -356,7 +356,7 @@
           type="button"
           class="btn"
           data-toggle="modal"
-          data-target="#modal-lg"
+          data-target="#modal-lg-doors"
           id="modal-doors"
         >
           View more
@@ -450,14 +450,11 @@
     <script src="js/script.js"></script>
   </body>
 
-  <div class="modal fade" id="modal-lg">
+  <div class="modal fade" id="modal-lg-doors">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          
-            <h4 class="modal-title">Doors Motors and Home alarms</h4>
-        
-          
+          <h4 class="modal-title">Doors Motors and Home alarms</h4>
           <button
             type="button"
             class="close"
@@ -468,47 +465,38 @@
           </button>
         </div>
         <div class="modal-body">
-
           <div class="slider">
-
             <div class="slide">
               <img src="images/Moto1.jpg" alt="" />
             </div>
 
-            <div class="slider">
-              <div class="slide">
-                <img src="images/Puerta1.jpeg" alt="" />
-              </div>
+            <div class="slide">
+              <img src="images/Puerta1.jpeg" alt="" />
             </div>
-            <div class="slider">
-              <div class="slide">
-                <img src="images/Puerta2.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="slider">
-              <div class="slide">
-                <img src="images/Alarma1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="slider">
-              <div class="slide">
-                <img src="images/Alarma2.jpg" alt="" />
-              </div>
-            </div>
-            <div class="slider">
-              <div class="slide">
-                <img src="images/Alarma3.jpg" alt="" />
-              </div>
-            </div>
-            <button class="btn-slide prev">
-              <i class="fas fa-ex fa-chevron-circle-left"></i>
-            </button>
-            <button class="btn-slide next">
-              <i class="fas fa-ex fa-chevron-circle-right"></i>
-            </button>
 
+            <div class="slide">
+              <img src="images/Puerta2.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Alarma1.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Alarma2.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Alarma3.jpg" alt="" />
+            </div>
+
+            <button class="btn-slide prev" id="prev">
+              <i class="fas fa-lg fa-chevron-circle-left"></i>
+            </button>
+            <button class="btn-slide next" id="next">
+              <i class="fas fa-lg fa-chevron-circle-right"></i>
+            </button>
           </div>
-
         </div>
       </div>
     </div>

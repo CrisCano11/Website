@@ -467,6 +467,7 @@ height: 25%;
       height: 50rem;
       margin: 0 auto;
       overflow: hidden;
+      
   }
   .slide{
       position: absolute;
@@ -487,12 +488,12 @@ height: 25%;
   }
 
   .slide button {
-      background: none;
       border: none;
+      background: none;
   }
 
   .slide button .fas{
-      background-color: none;
+      color: rgba(255, 255, 255, .5)
   }
 
   .btn-slide{
@@ -502,6 +503,7 @@ height: 25%;
       height: 5.5rem;
       width: 5.5rem;
       cursor: pointer;
+      background: none;
   }
 
   .prev{
