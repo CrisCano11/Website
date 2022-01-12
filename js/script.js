@@ -2,8 +2,8 @@ alertify.set("notifier", "position", "top-right");
 
 $(document).ready(function () {
 
-  console.log(document.querySelectorAll('.slide')); 
-  const carousel = document.querySelectorAll('.slide');
+  console.log(document.querySelectorAll('.slide1')); 
+  const carousel = document.querySelectorAll('.slide1');
   
   const changeslide = function (sliders) {
     carousel.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
@@ -13,24 +13,47 @@ $(document).ready(function () {
 
     var current = 0;
     changeslide(current);
-    $("#next").on('click', function () {
+    $("#next1").on('click', function () {
       current++;
       if (carousel.length -1 < current) {
         current = 0
       }
-      console.log(current);
-      console.log(changeslide(current))
-      console.log("next");
+      changeslide(current);
     });
   
-    $("#prev").on('click',function () {
+    $("#prev1").on('click',function () {
       current--;
       if (0>=current) {
         current = 0
       }
       changeslide(current);
-      console.log("prev");
-    })
+    });
+
+  console.log(document.querySelectorAll('.slide2')); 
+  const carousel2 = document.querySelectorAll('.slide2');
+  
+  const changeslide2 = function (sliders) {
+    carousel2.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
+  };
+
+    var current = 0;
+    changeslide2(current);
+    $("#next2").on('click', function () {
+      current++;
+      if (carousel2.length -1 < current) {
+        current = 0
+      }
+      changeslide2(current);
+    });
+  
+    $("#prev2").on('click',function () {
+      current--;
+      if (0>=current) {
+        current = 0
+      }
+      changeslide2(current);
+    });
+
 
   $("#menu").click(function () {
     $(this).toggleClass("fa-times");
@@ -115,8 +138,10 @@ $("#send").on("click", function name() {
     },
   });
 
-  
-  
+ 
 
 });
+
+
+ 
 
