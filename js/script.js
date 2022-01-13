@@ -8,25 +8,24 @@ $(document).ready(function () {
   const changeslide = function (sliders) {
     carousel.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
    
-    console.log("traslate");
   };
 
-    var current = 0;
-    changeslide(current);
+    let current1 = 0;
+    changeslide(current1);
     $("#next1").on('click', function () {
-      current++;
-      if (carousel.length -1 < current) {
-        current = 0
+      current1++;
+      if (carousel.length -1 < current1) {
+        current1 = 0
       }
-      changeslide(current);
+      changeslide(current1);
     });
   
     $("#prev1").on('click',function () {
-      current--;
-      if (0>=current) {
-        current = 0
+      current1--;
+      if (0>=current1) {
+        current1 = 0
       }
-      changeslide(current);
+      changeslide(current1);
     });
 
   console.log(document.querySelectorAll('.slide2')); 
@@ -36,22 +35,22 @@ $(document).ready(function () {
     carousel2.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
   };
 
-    var current = 0;
-    changeslide2(current);
+    let current2 = 0;
+    changeslide2(current2);
     $("#next2").on('click', function () {
-      current++;
-      if (carousel2.length -1 < current) {
-        current = 0
+      current2++;
+      if (carousel2.length -1 < current2) {
+        current2 = 0
       }
-      changeslide2(current);
+      changeslide2(current2);
     });
   
     $("#prev2").on('click',function () {
-      current--;
-      if (0>=current) {
-        current = 0
+      current2--;
+      if (0>=current2) {
+        current2 = 0
       }
-      changeslide2(current);
+      changeslide2(current2);
     });
 
 

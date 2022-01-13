@@ -486,6 +486,16 @@ height: 25%;
       height: 100%;
       object-fit: cover;
   }
+  .slide  i  {
+      
+      position: absolute;
+      margin-top: 23em;
+  }
+  .slide span {
+      
+      position: relative;
+      font-size: 2rem;
+  }
 
   .slide button {
       border: none;
