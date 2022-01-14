@@ -2,7 +2,6 @@ alertify.set("notifier", "position", "top-right");
 
 $(document).ready(function () {
 
-  console.log(document.querySelectorAll('.slide1')); 
   const carousel = document.querySelectorAll('.slide1');
   
   const changeslide = function (sliders) {
@@ -28,7 +27,6 @@ $(document).ready(function () {
       changeslide(current1);
     });
 
-  console.log(document.querySelectorAll('.slide2')); 
   const carousel2 = document.querySelectorAll('.slide2');
   
   const changeslide2 = function (sliders) {
@@ -52,6 +50,30 @@ $(document).ready(function () {
       }
       changeslide2(current2);
     });
+
+    const carousel3 = document.querySelectorAll('.slide3');
+  
+    const changeslide3 = function (sliders) {
+      carousel3.forEach((slide,index)=> (slide.style.transform = `translateX(${100*(index-sliders)}%)`));
+    };
+  
+      let current3 = 0;
+      changeslide3(current3);
+      $("#next3").on('click', function () {
+        current3++;
+        if (carousel3.length -1 < current3) {
+          current3 = 0
+        }
+        changeslide3(current3);
+      });
+    
+      $("#prev3").on('click',function () {
+        current3--;
+        if (0>=current3) {
+          current3 = 0
+        }
+        changeslide3(current3);
+      });
 
 
   $("#menu").click(function () {
